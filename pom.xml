@@ -21,6 +21,16 @@
             <version>7.0</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-ws</artifactId>
+            <version>1.4.0.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>wsdl4j</groupId>
+            <artifactId>wsdl4j</artifactId>
+            <version>1.6.1</version>
+        </dependency>
     </dependencies>
 
 <profiles>
@@ -41,6 +51,28 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                     <outputDirectory>deployments</outputDirectory>
               		  <warName>ROOT</warName>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>jaxb2-maven-plugin</artifactId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <id>xjc</id>
+                        <goals>
+                            <goal>xjc</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+
+                    <schemaDirectory>${project.basedir}/src/main/resources/</schemaDirectory>
+                    <outputDirectory>${project.basedir}/src/main/java/spellservice/</outputDirectory>
+                    <clearOutputDir>false</clearOutputDir>
+                    <wsdl>true</wsdl>
+                    <xmlschema>false</xmlschema>
+                    <schemaFiles>spellservice.wsdl</schemaFiles>
                 </configuration>
             </plugin>
         </plugins>
