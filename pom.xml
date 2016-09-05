@@ -66,7 +66,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <schemaDirectory>${project.basedir}/src/main/webapp/WB-INF/</schemaDirectory>
+                    <schemaDirectory>src/main/webapp/WEB-INF/</schemaDirectory>
                     <outputDirectory>${project.basedir}/src/main/java/spellservice</outputDirectory>
                     <clearOutputDir>false</clearOutputDir>
                     <wsdl>true</wsdl>
