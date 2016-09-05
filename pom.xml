@@ -72,7 +72,6 @@
                     <clearOutputDir>false</clearOutputDir>
                     <wsdl>true</wsdl>
                     <xmlschema>false</xmlschema>
-                    <schemaFiles>spellservice.wsdl</schemaFiles>
                 </configuration>
             </plugin>
         </plugins>
