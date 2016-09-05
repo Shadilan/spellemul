@@ -67,8 +67,8 @@
                 </executions>
                 <configuration>
 
-                    <schemaDirectory>${project.basedir}/src/main/java/resources/</schemaDirectory>
-                    <outputDirectory>${project.basedir}/src/main/java/spellservice/</outputDirectory>
+                    <schemaDirectory>${project.basedir}/src/main/java/resources</schemaDirectory>
+                    <outputDirectory>${project.basedir}/src/main/java/spellservice</outputDirectory>
                     <clearOutputDir>false</clearOutputDir>
                     <wsdl>true</wsdl>
                     <xmlschema>false</xmlschema>
