@@ -19,8 +19,8 @@ public class ErrorGenerator {
 
     }
 
-    public SpellError[] getError(String text) {
-        String[] wordArray=text.replaceAll("[\\,,\\.]"," ").replaceAll("  "," ").split("[ ,\\.,\\,]");
+    public SpellResult getError(String text) {
+        /*String[] wordArray=text.replaceAll("[\\,,\\.]"," ").replaceAll("  "," ").split("[ ,\\.,\\,]");
         //Определить количестве строк в тексте.
         int wordCount=wordArray.length;
         //Определить количество ошибочных слов.
@@ -66,8 +66,8 @@ public class ErrorGenerator {
                 }
             }
             return (SpellError[])errorWords.toArray();
-        } else
-        return new SpellError[0];
+        } else*/
+        return new SpellResult();
     }
     public SpellError[][] getErrors(String[] texts) {
         int cnt=texts.length;
