@@ -32,12 +32,12 @@ public class SpellServiceEndpoint {
             return response;
         }
 
-        @PayloadRoot(namespace = NAMESPACE_URI, localPart = "CheckTextsRequest")
+        /*@PayloadRoot(namespace = NAMESPACE_URI, localPart = "CheckTextsRequest")
         @ResponsePayload
         public CheckTextResponse checkTexts(@RequestPayload CheckTextsRequest request) {
             CheckTextResponse response = new CheckTextResponse();
             response.setSpellResult(errorGenerator.getError(request.getText()));
             return response;
-        }
+        }*/
     }
 
